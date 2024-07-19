@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
+    </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ea1b25', navbarC: '#0f233c', grayBG: '#eaeaea', secTextColor: "#222222",
+          },
+          fontFamily: {
+            // 'sans': ['ui-sans-serif', 'system-ui', ...],
+            // 'serif': ['ui-serif', 'Georgia', ...],
+            // 'mono': ['ui-monospace', 'SFMono-Regular', ...],
+            rubik: ['"Rubik", sans-serif' ],
+            roboto: ['"Roboto", sans-serif'],
+            // jeva: ['"Playwrite HR Lijeva", cursive'],
+        },
+        }
+      }
+    }
+  </script>
+  <title>Auto Parts </title>
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="flex justify-between items-center max-w-[1140px] mx-auto font-rubik">
+                <div class="flex items-center py-[10px] font-main">
+                    <img src="./images/truck-svgrepo-com.svg" alt="delivery icon" class="h-[20px] ">
+                    <p class="text-secTextColor text-[13px] font-medium leading-5 px-[10px] border-r-[1px] border-[#4a4a4a/70] opacity-70">Free Delivery</p>
+                    <img src="./images/refund-2-svgrepo-com.svg" alt="return icon" class="h-[20px] mx-[10px]">
+                    <p class="text-secTextColor text-[13px] leading-5 px-[10px] border-r-[1px] border-[#4a4a4a/70] opacity-70">Returns Policy</p>
+                    <p class="text-secTextColor text-[13px] leading-5 px-[10px] opacity-70">Follow Us</p>
+                    <img src="./images/facebook-svgrepo-com.svg" alt="return icon" class="h-[15px] mx-[10px]">
+                    <img src="./images/twitter-154-svgrepo-com.svg" alt="return icon" class="h-[15px] mx-[10px]">
+                    <img src="./images/instagram-svgrepo-com.svg" alt="return icon" class="h-[15px] mx-[10px]">
+                    <img src="./images/pintrest-svgrepo-com.svg" alt="return icon" class="h-[15px] mx-[10px]">
+                </div>
+                <div class="font-main">
+                    <p class="text-secTextColor text-[13px] opacity-70">Login</p>
+                </div>
+            </div>
+            <div class="flex justify-between items-center mx-auto font-roboto bg-navbarC py-[20px]">
+                <div class="flex justify-between w-[1140px] mx-auto">
+                    <div class="">
+                        <img src="./images/marketPress.png" alt="Market press logo" class="h-[21px] my-[10px]">
+                    </div>
+                    <div class="flex items-center pl-[28px]">
+                        <input type="text" placeholder="Find your product" class="pl-[28px] py-[11px] rounded-l-md outline-none border-0">
+                        <input list="browsers" class="pl-[28px] py-[11px] outline-none border-0" placeholder="All Categories">
+                        <datalist id="browsers" class="pl-[28px] py-[8px]">
+                          <option value="All Categories">
+                          <option value="Womens Clothings">
+                          <option value="Featured Products">
+                          <option value="Wireless ">
+                          <option value="Mens Clothings">
+                        </datalist>
+                        <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[46px] p-2 bg-white">
+                        <img src="./images/search-alt-svgrepo-com.svg" alt="" class="h-[46px] bg-primary p-3 rounded-r-md">
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./images/add-favorite-svgrepo-com.svg" alt="" class="h-[40px] mx-[20px]">
+                        <img src="./images/checkout-svgrepo-com.svg" alt="" class="h-[40px] ">
+                    </div>
+                </div> 
+            </div>
+            <div class="shadow-lg">
+                <div class="flex justify-between items-center mx-auto font-rubik py-[20px] w-[1140px] mx-auto">
+                    <div class="flex items-center">
+                        <img src="./images/menu-svgrepo-com.svg" alt="menu icon" class="h-[20px] opacity-70 ">
+                        <p class="text-secTextColor text-[16px] mx-[15px] opacity-70">All Categories</p>
+                        <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[40px] bg-white">
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Home</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Pages</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Shop</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Blog</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Gallery</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div> 
+                    </div>
+                    <div class="px-[38px] py-[8px] rounded-md text-white bg-primary">
+                        <p class="text-[16px] font-bold text-center">Black Friday</p>
+                        <p class="text-[12px] text-center">Get 45% off!!!</p>
+                    </div>
+        
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="relative h-[660px] w-[100%] font-rubik overflow">
+            <div class=" brightness-50 h-[660px] w-[100%] absolute"><img src="./images/Hero BG pic.jpg" alt="track marks" class="h-[660px] w-[100%] object-cover absolute"></div>
+            <div class="relative flex justify-center items-center gap-[20px] py-[60px] w-[1140px] mx-auto">
+                <div class="">
+                    <h1 class="font-bold text-white text-[58px] italic uppercase">Get All <span class="text-primary">Original Auto</span> parts</h1>
+                    <p class="font-medium text-white text-[18px] mb-[24px]">We have all your auto parts need! Are you looking for the best performance car parts and car accessories</p>
+                    <p class="text-[12px] text-center py-[16px] rounded-md bg-primary w-[200px] text-white font-bold uppercase">view collections</p>
+                </div>
+                <img src="./images/tire hero pic.png" alt="" class="h-[550px]">                
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex justify-between relative pt-[70px] gap-[15px] w-[1140px] mx-auto ">
+            <div class="relative h-[290px] w-[32%] font-rubik rounded-xl shadow-lg">
+                <div class=" h-[290px] w-[100%] absolute overflow-hidden rounded-xl">
+                    <img src="./images/Car Break img 1.jpg" alt="track marks" class="h-[290px] w-[100%] object-cover absolute translate-x-[150px] rounded-xl">
+                </div>
+                <div class="relative flex flex-col justify-center h-[290px] w-[90%] p-[30px]">
+                    <p class="font-medium  text-[24px] mb-[10px]">Get 50% off</p>
+                    <h1 class="font-bold text-[24px] mb-[20px] capitalized">Every Hydrolic <span class="text-white">Break</span> Item</h1>
+                    <p class="text-[12px] text-center py-[10px] rounded-md bg-primary w-[100px] text-white uppercase">go shop</p>                                 
+                </div>
+            </div>
+            <div class="relative h-[290px] w-[32%] font-rubik rounded-xl shadow-lg">
+                <div class=" h-[290px] w-[100%] absolute overflow-hidden rounded-xl">
+                    <img src="./images/benz steering.webp" alt="track marks" class="h-[290px] w-[100%] object-cover absolute translate-x-[85px] -z-10 rounded-r-xl">
+                    <div class="z-0 absolute h-[290px] w-[100%] bg-primary opacity-80 rounded-xl"></div>
+                </div>
+                <div class="relative flex flex-col justify-center h-[290px] w-[90%] p-[30px]">
+                    <p class="font-medium  text-[24px] mb-[10px]">Feel Better</p>
+                    <h1 class="font-bold text-[24px] mb-[20px] capitalized">Drive easy from <span class="text-white">$50</span> </h1>
+                    <p class="text-[12px] text-center py-[10px] rounded-md bg-primary w-[100px] text-white uppercase">go shop</p>                                 
+                </div>
+            </div>
+            <div class="relative h-[290px] w-[32%] font-rubik rounded-xl shadow-lg">
+                <div class=" h-[290px] w-[100%] absolute overflow-hidden rounded-xl">
+                    <img src="./images/tail light.jpg" alt="track marks" class="h-[290px] w-[100%] object-cover absolute translate-x-[85px] -z-10 rounded-r-xl">
+                    <div class="z-0 absolute h-[290px] w-[100%] bg-black opacity-70 rounded-xl"></div>
+                </div>
+                <div class="relative flex flex-col justify-center h-[290px] w-[90%] p-[30px]">
+                    <p class="font-medium  text-[24px] mb-[10px] text-white">Get 50% off</p>
+                    <h1 class="font-bold text-[24px] mb-[20px] capitalized text-white">Every Hydrolic Break Item</h1>
+                    <p class="text-[12px] text-center py-[10px] rounded-md bg-primary w-[100px] text-white uppercase">go shop</p>                                 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+            <div class="flex pt-[55px] w-[1140px] mx-auto font-roboto">
+                <div class="row-span-3 border border-primary w-[360px]">
+                    <div class="flex items-center bg-primary py-[10px] ">
+                        <p class="text-[18px]  w-[100%] text-white">Deals of the week</p>
+                        <img src="./images/white dropdown-arrow-svgrepo-com.svg" alt=" right arrow" class="rotate-90 h-[28px] bg-primary">
+                        <img src="./images/white dropdown-arrow-svgrepo-com.svg" alt=" right arrow" class="-rotate-90 h-[28px] bg-primary">           
+                    </div>
+                    <div class="mx-[13px] py-[10px] px-[30px]">
+                        <img src="./images/shinning rims.png" alt="car rims" class="">
+                    </div>
+                    <div class="px-[20px] mb-[10px]">
+                        <p class="text-center">Gheoi Terminus RF</p>
+                        <div class="flex justify-center gap-[20px]">
+                            <p class="opacity-70 text-[24px] line-through ">$590.00</p>
+                            <p class=" text-primary text-[24px]">$350.00</p>
+                        </div>
+                        <div class="flex justify-center gap-[20px] ">
+                            <p class="text-[12px]">Already sold: 4</p>
+                            <p class=" text-[12px]">Already sold: 36</p>
+                            <div class="flex flex-col justify-center px-[18px] py-[12px] rounded-full text-white bg-primary">
+                                <p class="text-[18px] font-bold ">45%</p>
+                                <p class="text-[12px] text-center ">off !!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[5px] w-[70%]  rounded-full bg-black opacity-20 mx-auto "></div>
+                    <div class="h-[1px] w-[90%] my-[20px] rounded-full bg-black opacity-10 mx-auto "></div>
+                    <p class="text-center text-[24px]"><span class="text-primary">Hurry up! </span> Offer ends in:</p>
+                    <div class="my-[20px] flex justify-center">
+                        <div class=" flex flex-col mr-[10px]">
+                            <div class="bg-grayBG h-[40px] mb-[5px] w-[40px] rounded-full flex justify-center items-center">
+                                <p class="text-[14px] ">0</p>
+                            </div>
+                            <p class="uppercase text-[10px]">days</p>
+                        </div>
+                        <div class=" flex flex-col mr-[10px] items-center">
+                            <div class="bg-grayBG h-[40px] mb-[5px] w-[40px] rounded-full flex justify-center items-center">
+                                <p class="text-[14px] ">00</p>
+                            </div>
+                            <p class="uppercase text-[10px]">Hours</p>
+                        </div>
+                        <div class=" flex flex-col mr-[10px] items-center">
+                            <div class="bg-grayBG h-[40px] mb-[5px] w-[40px] rounded-full flex justify-center items-center">
+                                <p class="text-[14px] ">00</p>
+                            </div>
+                            <p class="uppercase text-[10px]">minutes</p>
+                        </div>
+                        <div class=" flex flex-col items-center ">
+                            <div class="bg-grayBG h-[40px] mb-[5px] w-[40px] rounded-full flex justify-center items-center">
+                                <p class="text-[14px] ">00</p>
+                            </div>
+                            <p class="uppercase text-[10px]">seconds</p>
+                        </div>
+                        
+                    </div>
+
+
+
+                    
+
+
+                    
+    
+                </div>
+                <div class="grid grid-cols-3 grid-rows-3   gap-[10px] ">
+                    <div class="col-span-3 bg-sky-400">
+                        afasfdsd
+                    </div>
+                </div>
+                <div class=" bg-sky-400">
+                    afasfdsd
+                </div>
+                <div class=" bg-sky-400">
+                    afasfdsd
+                </div>
+                            <div class=" bg-sky-400">
+                    afasfdsd
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+        <!-- <div class="grid grid-cols-4 grid-rows-3 pt-[55px] w-[1140px] mx-auto gap-[10px] font-roboto">
+            <div class="row-span-3 border border-primary w-[360px]">
+                <div class="flex items-center bg-primary p-[10px]">
+                    <p class="text-[18px]  w-[100%] text-white">Deals of the week</p>
+                    <img src="./images/white dropdown-arrow-svgrepo-com.svg" alt=" right arrow" class="rotate-90 h-[30px] bg-primary">
+                    <img src="./images/white dropdown-arrow-svgrepo-com.svg" alt=" right arrow" class="-rotate-90 h-[30px] bg-primary">           
+                </div>
+
+
+            </div>
+            <div class="col-span-3 bg-sky-400">
+afasfdsd
+            </div>
+            <div class=" bg-sky-400">
+                afasfdsd
+            </div>
+            <div class=" bg-sky-400">
+                afasfdsd
+            </div>
+                        <div class=" bg-sky-400">
+                afasfdsd
+            </div>
+
+
+        </div> -->
+    </section>
+
+
+
+
+    
+</body>
+</html>
