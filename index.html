@@ -15,6 +15,7 @@
         extend: {
           colors: {
             primary: '#ea1b25', navbarC: '#0f233c', grayBG: '#eaeaea', secTextColor: "#222222", textBlue: "#0054b1", grayText:"#444444",
+             lightGrayBG:"#fafafa", grassGreen: "#83b736",
           },
           fontFamily: {
             // 'sans': ['ui-sans-serif', 'system-ui', ...],
@@ -67,7 +68,7 @@
                           <option value="Mens Clothings">
                         </datalist>
                         <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[46px] p-2 bg-white">
-                        <img src="./images/search-alt-svgrepo-com.svg" alt="" class="h-[46px] bg-primary p-3 rounded-r-md">
+                        <img src="./images/search-alt-svgrepo-com.svg" alt="" class="h-[46px] bg-primary p-3 rounded-r-md hover:bg-grassGreen hover:ease-linear transition duration-500">
                     </div>
                     <div class="flex items-center">
                         <img src="./images/add-favorite-svgrepo-com.svg" alt="" class="h-[20px] md:h-[40px] mx-[20px]">
@@ -80,7 +81,7 @@
                     <div class="flex items-center">
                         <img src="./images/menu-svgrepo-com.svg" alt="menu icon" class="h-[20px] opacity-70 ">
                         <p class="text-secTextColor text-[16px] mx-[15px] opacity-70">All Categories</p>
-                        <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[40px] bg-white">
+                        <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[40px] bg-white ">
                     </div>
                     <div class="flex justify-between">
                         <div class="flex items-center">
@@ -104,7 +105,7 @@
                             <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
                         </div> 
                     </div>
-                    <div class="px-[38px] py-[8px] rounded-md text-white bg-primary">
+                    <div class="px-[38px] py-[8px] rounded-md text-white bg-primary hover:bg-grassGreen hover:ease-linear transition duration-500">
                         <p class="text-[16px] font-bold text-center">Black Friday</p>
                         <p class="text-[12px] text-center">Get 45% off!!!</p>
                     </div>
@@ -117,12 +118,20 @@
         <div class="relative h-[660px] w-[100%] font-rubik overflow">
             <div class=" brightness-50 h-[660px] w-[100%] absolute"><img src="./images/Hero BG pic.jpg" alt="track marks" class="h-[660px] w-[100%] object-cover absolute"></div>
             <div class="relative flex justify-center items-center gap-[20px] py-[60px] w-[1140px] mx-auto">
-                <div data-aos="fade-right" class="">
-                    <h1 class="font-bold text-white text-[58px] italic uppercase">Get All <span class="text-primary">Original Auto</span> parts</h1>
-                    <p class="font-medium text-white text-[18px] mb-[24px]">We have all your auto parts need! Are you looking for the best performance car parts and car accessories</p>
-                    <p class="text-[12px] text-center py-[16px] rounded-md bg-primary w-[200px] text-white font-bold uppercase">view collections</p>
+                <div class="w-[550px]">
+                    <div data-aos-duration="1000" data-aos="fade-down" data-aos-easing="linear">
+                        <h1 class="font-bold text-white text-[58px] italic uppercase">Get All <span class="text-primary">Original Auto</span> parts</h1>
+                    </div>
+                    <div data-aos-duration="1000" data-aos="fade-down" class="">
+                        <p class="font-medium text-white text-[18px] mb-[24px]">We have all your auto parts need! Are you looking for the best performance car parts and car accessories</p>
+                    </div>
+                    <div data-aos-duration="500" data-aos="fade-right" class="">
+                        <p class="text-[12px] text-center py-[16px] rounded-md bg-primary w-[200px] text-white font-bold uppercase hover:bg-white hover:text-black">view collections</p>
+                    </div>
                 </div>
-                <img src="./images/tire hero pic.png" alt="" class="h-[550px]">                
+                <div data-aos="fade-left" class="h-[550px]">
+                    <img src="./images/tire hero pic.png" alt="" class="h-[550px]">                 
+                </div>
             </div>
         </div>
     </section>
@@ -613,7 +622,7 @@
                 </div>
                 <div class="flex">
                     <input type="email" placeholder="Enter Your eMail Here ... " class="text-[14px] rounded-l-full outline-none border-0 py-[14px] px-[20px] w-[300px]">
-                    <button class="bg-[#333e48] text-white py-[14px] rounded-r-full px-[20px] w-[120px]">SUBMIT</button>
+                    <button class="bg-[#333e48] text-white py-[14px] rounded-r-full px-[20px] w-[120px] hover:bg-grassGreen hover:ease-linear transition duration-500">SUBMIT</button>
                 </div>
             </div>
         </div>
@@ -662,7 +671,7 @@
                     </div>
                 </div>
             </div>
-            <button class="h-[40px] w-[120px] bg-primary capitalized py-[10px] px-[10px] -rotate-90 opacity-90 rounded-md flex items-center place-self-center">
+            <button class="h-[40px] w-[120px] bg-primary capitalized py-[10px] px-[10px] -rotate-90 opacity-90 rounded-md flex items-center place-self-center hover:bg-grassGreen hover:ease-linear transition duration-500">
                 <p class="w-[100px] text-white font-roboto text-[12px]">BACK TOP</p> 
                 <img src="./images/white right arrow .svg" alt="icon" class="ml-[20px]">                
             </button> 
