@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
+    </style>
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ea1b25', navbarC: '#0f233c', grayBG: '#eaeaea', secTextColor: "#222222", textBlue: "#0054b1", grayText:"#444444",
+             lightGrayBG:"#fafafa",
+          },
+          fontFamily: {
+            // 'sans': ['ui-sans-serif', 'system-ui', ...],
+            // 'serif': ['ui-serif', 'Georgia', ...],
+            // 'mono': ['ui-monospace', 'SFMono-Regular', ...],
+            rubik: ['"Rubik", sans-serif' ],
+            roboto: ['"Roboto", sans-serif'],
+            // jeva: ['"Playwrite HR Lijeva", cursive'],
+        },
+        }
+      }
+    }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Auto Parts </title>
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="flex justify-between items-center max-w-[1140px] mx-auto font-rubik">
+                <div class="flex justify-between items-center py-[10px]">
+                    <img src="./images/truck-svgrepo-com.svg" alt="delivery icon" class="md:h-[20px] h-[0px]">
+                    <p class="text-secTextColor text-[13px] font-medium leading-5 px-[10px] border-r-[1px] border-[#4a4a4a/70] opacity-70 min-w-[100px]">Free Delivery</p>
+                    <img src="./images/refund-2-svgrepo-com.svg" alt="return icon" class="md:mx-[10px] md:h-[20px] h-[0px]">
+                    <p class="text-secTextColor text-[13px] leading-5 px-[10px] border-r-[1px] border-[#4a4a4a/70] opacity-70 min-w-[110px]">Returns Policy</p>
+                    <p class="text-secTextColor text-[13px] leading-5 px-[10px] opacity-70 min-w-[80px]">Follow Us</p>
+                    <img src="./images/facebook-svgrepo-com.svg" alt="return icon" class="md:h-[15px] md:mx-[10px] h-[0px]">
+                    <img src="./images/twitter-154-svgrepo-com.svg" alt="return icon" class="md:h-[15px] md:mx-[10px] h-[0px]">
+                    <img src="./images/instagram-svgrepo-com.svg" alt="return icon" class="md:h-[15px] md:mx-[10px] h-[0px]">
+                    <img src="./images/pintrest-svgrepo-com.svg" alt="return icon" class="md:h-[15px] md:mx-[10px] h-[0px]">
+                </div>
+                <div class="font-main">
+                    <p class="text-secTextColor text-[13px] opacity-70">Login</p>
+                </div>
+            </div>
+            <div class="flex justify-between items-center mx-auto font-roboto bg-navbarC py-[20px]">
+                <div class="flex justify-between w-[1140px] mx-auto">
+                    <div class="">
+                        <img src="./images/marketPress.png" alt="Market press logo" class="min-w-[200px] h-[21px] my-[10px]">
+                    </div>
+                    <div class="flex items-center pl-[28px] ">
+                        <input type="text" placeholder="Find your product" class="pl-[28px] py-[11px] rounded-l-md outline-none border-0">
+                        <input list="browsers" class="pl-[28px] py-[11px] outline-none border-0" placeholder="All Categories">
+                        <datalist id="browsers" class="pl-[28px] py-[8px]">
+                          <option value="All Categories">
+                          <option value="Womens Clothings">
+                          <option value="Featured Products">
+                          <option value="Wireless ">
+                          <option value="Mens Clothings">
+                        </datalist>
+                        <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[46px] p-2 bg-white">
+                        <img src="./images/search-alt-svgrepo-com.svg" alt="" class="h-[46px] bg-primary p-3 rounded-r-md">
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./images/add-favorite-svgrepo-com.svg" alt="" class="h-[20px] md:h-[40px] mx-[20px]">
+                        <img src="./images/checkout-svgrepo-com.svg" alt="" class="h-[20px] md:h-[40px] ">
+                    </div>
+                </div> 
+            </div>
+            <div class="shadow-lg">
+                <div class="flex justify-between items-center mx-auto font-rubik py-[20px] w-[1140px] mx-auto">
+                    <div class="flex items-center">
+                        <img src="./images/menu-svgrepo-com.svg" alt="menu icon" class="h-[20px] opacity-70 ">
+                        <p class="text-secTextColor text-[16px] mx-[15px] opacity-70">All Categories</p>
+                        <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[40px] bg-white">
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Home</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Pages</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Shop</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Blog</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Gallery</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div> 
+                    </div>
+                    <div class="px-[38px] py-[8px] rounded-md text-white bg-primary">
+                        <p class="text-[16px] font-bold text-center">Black Friday</p>
+                        <p class="text-[12px] text-center">Get 45% off!!!</p>
+                    </div>
+        
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="flex justify-between items-center mx-auto mt-[20px] font-roboto bg-lightGrayBG py-[20px]">
+            <div class="flex w-[1140px] mx-auto">
+                <a href="#">
+                    <p class="text-secTextColor font-semibold text-[14px] mr-[20px] opacity-70 ">Home</p>
+                </a>
+                <p class="text-secTextColor font-semibold text-[14px] mr-[10px]"><span class="px-[5px]">></span> About Us</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="max-w-[1140px] mx-auto font-roboto relative">
+            <p class="uppercase absolute -top-[40px] max-w-[1140px] mx-auto font-bold text-[120px] text-[#f5f4f4]">history</p>
+            <div class="flex justify-between items-center mt-[60px] py-[60px] relative">
+                <div class="relative w-[665px]">
+                    <p class="uppercase text-textBlue text-[14px] mb-[20px]">Our history</p>
+                    <p class="text-[42px] mb-[25px] font-bold">Creative and renovate fashion trends</p>
+                    <p class="mb-[55px] text-[16px]">Collaboratively administrate empowered markets via plug-and-play maintain networks. Dynamically usable procrastinate B2B users after 
+                        installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
+                    </p>
+                    <div class="flex">
+                        <div class="p-[10px]">
+                            <p class="text-[42px] text-textBlue">12</p>
+                            <p class="text-[14px]">Years Experience</p>
+                        </div>
+                        <div class="p-[10px]">
+                            <p class="text-[42px] text-textBlue">20K</p>
+                            <p class="text-[14px]">Happy Customers</p>
+                        </div>
+                        <div class="p-[10px]">
+                            <p class="text-[42px] text-textBlue">100%</p>
+                            <p class="text-[14px]">Clients Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-[10px]">
+                    <img src="./images/shopping busket.png" alt="shopping busket" class="my-[10px] h-[377px] w-[445px]">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="max-w-[1140px] mx-auto font-roboto relative">
+            <div class="flex justify-between items-center mt-[60px] py-[60px] relative">
+                <div class="py-[10px]">
+                    <img src="./images/shopping busket.png" alt="shopping busket" class="my-[10px] h-[377px] w-[445px]">
+                </div>
+                <div class="relative">
+                    <p class="uppercase absolute -top-[80px] max-w-[1140px] mx-auto font-bold text-[120px] text-[#f5f4f4]">vision</p>
+                    <div class="relative w-[665px]">
+                        <p class="text-textBlue text-[14px] mb-[20px]">Our vision</p>
+                        <p class="text-[42px] mb-[25px] font-bold">We are marketpress</p>
+                        <p class="mb-[55px] text-[16px]">Dynamically procrastinate B2C users after installed base benefits. 
+                            Dramatically visualize customer directed convergence without revolutionary ROI. 
+                        </p>
+                        <div class="flex items-center pb-[6px] pl-[6px]">
+                            <img src="./images/check-svgrepo-com.svg" alt="check" class="h-[17px] mr-[5px]">
+                            <p class="text-[14px] font-medium ">Credibly innovate granular internal</p>
+                        </div>
+                        <div class="flex items-center pb-[6px] pl-[6px]">
+                            <img src="./images/check-svgrepo-com.svg" alt="check" class="h-[17px] mr-[5px]">
+                            <p class="text-[14px] font-medium ">Grantedly underconstructions reloaded</p>
+                        </div>
+                        <div class="flex items-center pb-[6px] pl-[6px]">
+                            <img src="./images/check-svgrepo-com.svg" alt="check" class="h-[17px] mr-[5px]">
+                            <p class="text-[14px] font-medium ">Interactively procrastinate high-payoff</p>
+                        </div>
+                        <div class="flex items-center pb-[6px] pl-[6px]">
+                            <img src="./images/check-svgrepo-com.svg" alt="check" class="h-[17px] mr-[5px]">
+                            <p class="text-[14px] font-medium ">Completely synergize resource taxing relationships</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="max-w-[1140px] mx-auto font-rubik my-[60px] p-[10px]">
+            <div class="p-[10px] mb-[20px]">
+                <p class="uppercase text-textBlue text-[14px] mb-[5px]">Angels</p>
+                <p class="text-[42px] font-bold">Meet with our Team</p>
+            </div>
+            <div class="flex ">
+                <div class="pt-[10px] px-[10px]">
+                    <img src="./images/team_2.png" alt="guy smiling" class="">
+                    <div class="p-[30px]">
+                        <p class="text-center font-semibold uppercase text-[14px] mb-[15px] text-textBlue">FOUNDER</p>
+                        <p class="text-center font-semibold text-[20px] ">Tony Williamson</p>
+                    </div>
+                </div>
+                <div class="pt-[10px] px-[10px]">
+                    <img src="./images/team-1.png" alt="guy smiling" class="">
+                    <div class="p-[30px]">
+                        <p class="text-center font-semibold uppercase text-[14px] mb-[15px] text-textBlue">CEO</p>
+                        <p class="text-center font-semibold text-[20px] ">William Hanah</p>
+                    </div>
+                </div>
+                <div class="pt-[10px] px-[10px]">
+                    <img src="./images/team_3.png" alt="guy smiling" class="">
+                    <div class="p-[30px]">
+                        <p class="text-center font-semibold uppercase text-[14px] mb-[15px] text-textBlue">ADVISOR</p>
+                        <p class="text-center font-semibold text-[20px] ">JInglo Jelian</p>
+                    </div>
+                </div>
+                <div class="pt-[10px] px-[10px]">
+                    <img src="./images/team_4.png" alt="guy smiling" class="">
+                    <div class="p-[30px]">
+                        <p class="text-center font-semibold uppercase text-[14px] mb-[15px] text-textBlue">DESIGNER</p>
+                        <p class="text-center font-semibold text-[20px] ">Jony Smith</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex ">
+                <div class="pt-[10px] px-[10px]">
+                    <img src="./images/team_2.png" alt="guy smiling" class="">
+                    <div class="p-[30px]">
+                        <p class="text-center font-semibold uppercase text-[14px] mb-[15px] text-textBlue">FOUNDER</p>
+                        <p class="text-center font-semibold text-[20px] ">Tony Williamson</p>
+                    </div>
+                </div>
+                <div class="pt-[10px] px-[10px]">
+                    <img src="./images/team-1.png" alt="guy smiling" class="">
+                    <div class="p-[30px]">
+                        <p class="text-center font-semibold uppercase text-[14px] mb-[15px] text-textBlue">CEO</p>
+                        <p class="text-center font-semibold text-[20px] ">William Hanah</p>
+                    </div>
+                </div>
+                <div class="pt-[10px] px-[10px]">
+                    <img src="./images/team_3.png" alt="guy smiling" class="">
+                    <div class="p-[30px]">
+                        <p class="text-center font-semibold uppercase text-[14px] mb-[15px] text-textBlue">ADVISOR</p>
+                        <p class="text-center font-semibold text-[20px] ">JInglo Jelian</p>
+                    </div>
+                </div>
+                <div class="pt-[10px] px-[10px]">
+                    <img src="./images/team_4.png" alt="guy smiling" class="">
+                    <div class="p-[30px]">
+                        <p class="text-center font-semibold uppercase text-[14px] mb-[15px] text-textBlue">DESIGNER</p>
+                        <p class="text-center font-semibold text-[20px] ">Jony Smith</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>    
+    
+    
+    </section>
+    <section>
+        <div class="h-[260px] bg-lightGrayBG w-[100%] flex items-center">
+            <div class="flex justify-between items-center w-[1140px]  mx-auto p-[10px]">
+                <div class="w-[450px] flex justify-end">
+                    <div class=" ">
+                        <p class="mb-8px text-[26px] font-semibold">Newsletter & Get Updates</p>
+                        <p class="text-[14px] font-semibold opacity-70">Sign up for our newsletter to get up-to-date from us</p>
+                    </div>
+                </div>
+                <div class="flex border">
+                    <input type="email" placeholder="Enter Your eMail Here ... " class="text-[14px] rounded-l-sm outline-none border-0 py-[14px] px-[20px] w-[300px]">
+                    <button class="bg-[#0063d1] text-white py-[14px] rounded-r-sm px-[20px] w-[120px] hover:bg-[#83b736] hover:ease-linear transition duration-500">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="flex justify-between py-[60px] w-[1140px] mx-auto gap-5">
+            <div class="w-[1040px] flex justify-between gap-6">
+
+                <div class="p-[10px] bg-primary rounded-md w-[310px]">
+                    <img src="./images/marketPress.png" alt="" class="h-[22px] my-[10px]">
+                    <p class="mt-[60px] text-[22px] text-[#999999] w-[310px]">Got Question? Call us 24/7</p>
+                    <p class="mb-[10px] text-[22px] font-bold text-white">[80] 1017 197</p>
+                    <p class="mb-[30px] text-[14px] font-bold font-rubik text-[#999999] italic ">17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                    <button class="mb-[10px] text-[12px] bg-white capitalized py-[10px] px-[20px] opacity-90 rounded-md flex items-center">
+                        <img src="./images/location pointer svg - Copy.svg" alt="icon" class="mr-[5px]">
+                        View On Map
+                    </button>  
+                </div>
+                <div class="ml-[50px]">
+                    <div class="px-[10px] pb-[10px] w-[375px]">
+                        <p class="text-[22px] text-[#999999] w-[310px]">We Using</p>
+                        <p class="mb-[50px] text-[22px] text-[#444444] font-bold">Safe Payments</p>
+                        <p class="mt-[30px] text-[16px] text-grayText ">Secured by:</p>
+                    </div>
+                </div>
+                <div class="flex w-[430px] justify-between">
+                    <div class="">
+                        <p class="text-[18px] font-roboto font-bold mb-[15px] ">Our Stores</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">New York</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">London SF</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">Cockfosters BP</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">Los Angeles</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">Chicago</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">Las Vegas</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">Albarto</p>
+                    </div>
+                    <div class="">
+                        <p class="text-[18px] font-roboto font-bold mb-[15px] ">Quick Links</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">Support Center</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">Term & Conditions</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">Shipping</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">Privacy Policy</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">Help</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">Products Return</p>
+                        <p class="text-[14px] text-grayText font-rubik mb-[18px] hover:text-textBlue">FAQS</p> 
+                    </div>
+                </div>
+            </div>
+            <button class="h-[40px] w-[120px] bg-primary capitalized py-[10px] px-[10px] -rotate-90 opacity-90 rounded-md flex items-center place-self-center">
+                <p class="w-[100px] text-white font-roboto text-[12px]">BACK TOP</p> 
+                <img src="./images/white right arrow .svg" alt="icon" class="ml-[20px]">                
+            </button> 
+        </div>
+        <p class="font-roboto text-[14px]">Copyrights By Xpeedstudio - (Built by Derrode W.) 2024</p>
+    </footer>
+
+
+    
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+
+</html>

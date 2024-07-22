@@ -7,6 +7,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
     </style>
+ 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -27,22 +28,24 @@
       }
     }
   </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <title>Auto Parts </title>
 </head>
 <body>
     <section>
         <nav>
             <div class="flex justify-between items-center max-w-[1140px] mx-auto font-rubik">
-                <div class="flex items-center py-[10px] font-main">
-                    <img src="./images/truck-svgrepo-com.svg" alt="delivery icon" class="h-[20px] ">
-                    <p class="text-secTextColor text-[13px] font-medium leading-5 px-[10px] border-r-[1px] border-[#4a4a4a/70] opacity-70">Free Delivery</p>
-                    <img src="./images/refund-2-svgrepo-com.svg" alt="return icon" class="h-[20px] mx-[10px]">
-                    <p class="text-secTextColor text-[13px] leading-5 px-[10px] border-r-[1px] border-[#4a4a4a/70] opacity-70">Returns Policy</p>
-                    <p class="text-secTextColor text-[13px] leading-5 px-[10px] opacity-70">Follow Us</p>
-                    <img src="./images/facebook-svgrepo-com.svg" alt="return icon" class="h-[15px] mx-[10px]">
-                    <img src="./images/twitter-154-svgrepo-com.svg" alt="return icon" class="h-[15px] mx-[10px]">
-                    <img src="./images/instagram-svgrepo-com.svg" alt="return icon" class="h-[15px] mx-[10px]">
-                    <img src="./images/pintrest-svgrepo-com.svg" alt="return icon" class="h-[15px] mx-[10px]">
+                <div class="flex justify-between items-center py-[10px]">
+                    <img src="./images/truck-svgrepo-com.svg" alt="delivery icon" class="md:h-[20px] h-[0px]">
+                    <p class="text-secTextColor text-[13px] font-medium leading-5 px-[10px] border-r-[1px] border-[#4a4a4a/70] opacity-70 min-w-[100px]">Free Delivery</p>
+                    <img src="./images/refund-2-svgrepo-com.svg" alt="return icon" class="md:mx-[10px] md:h-[20px] h-[0px]">
+                    <p class="text-secTextColor text-[13px] leading-5 px-[10px] border-r-[1px] border-[#4a4a4a/70] opacity-70 min-w-[110px]">Returns Policy</p>
+                    <p class="text-secTextColor text-[13px] leading-5 px-[10px] opacity-70 min-w-[80px]">Follow Us</p>
+                    <img src="./images/facebook-svgrepo-com.svg" alt="return icon" class="md:h-[15px] md:mx-[10px] h-[0px]">
+                    <img src="./images/twitter-154-svgrepo-com.svg" alt="return icon" class="md:h-[15px] md:mx-[10px] h-[0px]">
+                    <img src="./images/instagram-svgrepo-com.svg" alt="return icon" class="md:h-[15px] md:mx-[10px] h-[0px]">
+                    <img src="./images/pintrest-svgrepo-com.svg" alt="return icon" class="md:h-[15px] md:mx-[10px] h-[0px]">
                 </div>
                 <div class="font-main">
                     <p class="text-secTextColor text-[13px] opacity-70">Login</p>
@@ -51,9 +54,9 @@
             <div class="flex justify-between items-center mx-auto font-roboto bg-navbarC py-[20px]">
                 <div class="flex justify-between w-[1140px] mx-auto">
                     <div class="">
-                        <img src="./images/marketPress.png" alt="Market press logo" class="h-[21px] my-[10px]">
+                        <img src="./images/marketPress.png" alt="Market press logo" class="min-w-[200px] h-[21px] my-[10px]">
                     </div>
-                    <div class="flex items-center pl-[28px]">
+                    <div class="flex items-center pl-[28px] ">
                         <input type="text" placeholder="Find your product" class="pl-[28px] py-[11px] rounded-l-md outline-none border-0">
                         <input list="browsers" class="pl-[28px] py-[11px] outline-none border-0" placeholder="All Categories">
                         <datalist id="browsers" class="pl-[28px] py-[8px]">
@@ -67,8 +70,8 @@
                         <img src="./images/search-alt-svgrepo-com.svg" alt="" class="h-[46px] bg-primary p-3 rounded-r-md">
                     </div>
                     <div class="flex items-center">
-                        <img src="./images/add-favorite-svgrepo-com.svg" alt="" class="h-[40px] mx-[20px]">
-                        <img src="./images/checkout-svgrepo-com.svg" alt="" class="h-[40px] ">
+                        <img src="./images/add-favorite-svgrepo-com.svg" alt="" class="h-[20px] md:h-[40px] mx-[20px]">
+                        <img src="./images/checkout-svgrepo-com.svg" alt="" class="h-[20px] md:h-[40px] ">
                     </div>
                 </div> 
             </div>
@@ -114,7 +117,7 @@
         <div class="relative h-[660px] w-[100%] font-rubik overflow">
             <div class=" brightness-50 h-[660px] w-[100%] absolute"><img src="./images/Hero BG pic.jpg" alt="track marks" class="h-[660px] w-[100%] object-cover absolute"></div>
             <div class="relative flex justify-center items-center gap-[20px] py-[60px] w-[1140px] mx-auto">
-                <div class="">
+                <div data-aos="fade-right" class="">
                     <h1 class="font-bold text-white text-[58px] italic uppercase">Get All <span class="text-primary">Original Auto</span> parts</h1>
                     <p class="font-medium text-white text-[18px] mb-[24px]">We have all your auto parts need! Are you looking for the best performance car parts and car accessories</p>
                     <p class="text-[12px] text-center py-[16px] rounded-md bg-primary w-[200px] text-white font-bold uppercase">view collections</p>
@@ -667,4 +670,9 @@
         <p class="font-roboto text-[14px]">Copyrights By Xpeedstudio - (Built by Derrode W.) 2024</p>
     </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+  
 </html>
