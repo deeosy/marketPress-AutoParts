@@ -7,6 +7,19 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
     </style>
+    <style>
+        /* .arrowD::before:hover{
+            content: "";
+            border-width: 4px;
+            border-style: solid;
+            border-color: #ea1b25    transparent transparent  transparent ;
+            position: absolute;
+            bottom: -7px;
+            right: 41%;
+            visibility: hidden;
+        } */
+
+    </style>
  
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -34,7 +47,7 @@
   <title>Auto Parts </title>
 </head>
 <body>
-    <section>
+    <section id="toTop">
         <nav>
             <div class="flex justify-between items-center max-w-[1140px] mx-auto font-rubik">
                 <div class="flex justify-between items-center py-[10px]">
@@ -71,8 +84,14 @@
                         <img src="./images/search-alt-svgrepo-com.svg" alt="" class="h-[46px] bg-primary p-3 rounded-r-md hover:bg-grassGreen hover:ease-linear transition duration-500">
                     </div>
                     <div class="flex items-center">
-                        <img src="./images/add-favorite-svgrepo-com.svg" alt="" class="h-[20px] md:h-[40px] mx-[20px]">
-                        <img src="./images/checkout-svgrepo-com.svg" alt="" class="h-[20px] md:h-[40px] ">
+                        <div class="relative">
+                            <p class="text-[16px] text-center absolute -top-[8px] left-[50px] rounded-[50%] border-2 w-[25px] bg-white ">0</p>
+                            <img src="./images/add-favorite-svgrepo-com.svg" alt="" class="h-[20px] md:h-[40px] mx-[20px]">
+                        </div>
+                        <div class="relative">
+                            <p class="text-[16px] text-white text-center absolute -top-[8px] left-[25px] rounded-[50%] border-2 w-[25px] bg-primary ">0</p> 
+                            <img src="./images/checkout-svgrepo-com.svg" alt="" class="h-[20px] md:h-[40px] ">
+                        </div>                        
                     </div>
                 </div> 
             </div>
@@ -172,7 +191,7 @@
         </div>
     </section>
     <section>
-        <div class="flex pt-[55px] w-[1140px] gap-[10px] mx-auto font-roboto">
+        <div class="flex pt-[55px] w-[1140px] gap-[10px] mx-auto font-roboto group">
             <div class="border border-primary w-[32%]">
                 <div class="flex items-center bg-primary h-[70px] py-[10px] ">
                     <p class="text-[18px] pl-[20px] w-[100%] text-white">Deals of the week</p>
@@ -180,7 +199,7 @@
                     <img src="./images/white dropdown-arrow-svgrepo-com.svg" alt=" right arrow" class="-rotate-90 h-[28px] bg-primary">           
                 </div>
                 <div class="mx-[13px] py-[10px] px-[30px]">
-                    <img src="./images/shinning rims.png" alt="car rims" class="hover:opacity-70">
+                    <img src="./images/shinning rims.png" alt="car rims" class="group-hover:opacity-70 ">
                 </div>
                 <div class="px-[20px] mb-[10px]">
                     <p class="text-center">Gheoi Terminus RF</p>
@@ -452,8 +471,8 @@
             <div class="h-[60px] flex w-[100%] border-b-[1px] border-grayBG items-center justify-between mb-[20px] ">
                 <p class=" text-[22px]">Recently Added</p>
                 <div class=" flex gap-[40px]">
-                    <div class="flex justify-between items-center gap-[10px] ">
-                        <p class=" py-[16px] text-[18px] hover:border-primary hover:border-b-2 hover:text-primary" >On Sell</p>
+                    <div class="flex justify-between items-center gap-[10px] relative">
+                        <p class="arrowD py-[16px] text-[18px] hover:border-primary hover:border-b-2 hover:text-primary" >On Sell</p>
                     </div>
                     <div class="flex justify-between items-center ">
                         <p class=" py-[16px] text-[18px] hover:border-primary hover:border-b-2 hover:text-primary" >Hot Sell</p>
@@ -671,10 +690,12 @@
                     </div>
                 </div>
             </div>
-            <button class="h-[40px] w-[120px] bg-primary capitalized py-[10px] px-[10px] -rotate-90 opacity-90 rounded-md flex items-center place-self-center hover:bg-grassGreen hover:ease-linear transition duration-500">
-                <p class="w-[100px] text-white font-roboto text-[12px]">BACK TOP</p> 
-                <img src="./images/white right arrow .svg" alt="icon" class="ml-[20px]">                
-            </button> 
+            <a href="#toTop" class="flex place-self-center">
+                <button class="h-[40px] w-[120px] bg-primary capitalized py-[10px] px-[10px] -rotate-90 opacity-90 rounded-md flex items-center hover:bg-grassGreen hover:ease-linear transition duration-500">
+                    <p class="w-[100px] text-white font-roboto text-[12px] ">BACK TOP</p> 
+                    <img src="./images/white right arrow .svg" alt="icon" class="ml-[20px]">                
+                </button> 
+            </a>
         </div>
         <p class="font-roboto text-[14px]">Copyrights By Xpeedstudio - (Built by Derrode W.) 2024</p>
     </footer>

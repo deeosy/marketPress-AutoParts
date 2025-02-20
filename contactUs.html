@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
+    </style>
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#ea1b25', navbarC: '#0f233c', grayBG: '#eaeaea', secTextColor: "#222222", textBlue: "#0054b1", grayText:"#444444",
+             lightGrayBG:"#fafafa", grassGreen: "#83b736",
+          },
+          fontFamily: {
+            // 'sans': ['ui-sans-serif', 'system-ui', ...],
+            // 'serif': ['ui-serif', 'Georgia', ...],
+            // 'mono': ['ui-monospace', 'SFMono-Regular', ...],
+            rubik: ['"Rubik", sans-serif' ],
+            roboto: ['"Roboto", sans-serif'],
+            // jeva: ['"Playwrite HR Lijeva", cursive'],
+        },
+        }
+      }
+    }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>Auto Parts </title>
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="flex justify-between items-center max-w-[1140px] mx-auto font-rubik">
+                <div class="flex justify-between items-center py-[10px]">
+                    <img src="./images/truck-svgrepo-com.svg" alt="delivery icon" class="md:h-[20px] h-[0px]">
+                    <p class="text-secTextColor text-[13px] font-medium leading-5 px-[10px] border-r-[1px] border-[#4a4a4a/70] opacity-70 min-w-[100px]">Free Delivery</p>
+                    <img src="./images/refund-2-svgrepo-com.svg" alt="return icon" class="md:mx-[10px] md:h-[20px] h-[0px]">
+                    <p class="text-secTextColor text-[13px] leading-5 px-[10px] border-r-[1px] border-[#4a4a4a/70] opacity-70 min-w-[110px]">Returns Policy</p>
+                    <p class="text-secTextColor text-[13px] leading-5 px-[10px] opacity-70 min-w-[80px]">Follow Us</p>
+                    <img src="./images/facebook-svgrepo-com.svg" alt="return icon" class="md:h-[15px] md:mx-[10px] h-[0px]">
+                    <img src="./images/twitter-154-svgrepo-com.svg" alt="return icon" class="md:h-[15px] md:mx-[10px] h-[0px]">
+                    <img src="./images/instagram-svgrepo-com.svg" alt="return icon" class="md:h-[15px] md:mx-[10px] h-[0px]">
+                    <img src="./images/pintrest-svgrepo-com.svg" alt="return icon" class="md:h-[15px] md:mx-[10px] h-[0px]">
+                </div>
+                <div class="font-main">
+                    <p class="text-secTextColor text-[13px] opacity-70">Login</p>
+                </div>
+            </div>
+            <div class="flex justify-between items-center mx-auto font-roboto bg-navbarC py-[20px]">
+                <div class="flex justify-between w-[1140px] mx-auto">
+                    <div class="">
+                        <img src="./images/marketPress.png" alt="Market press logo" class="min-w-[200px] h-[21px] my-[10px]">
+                    </div>
+                    <div class="flex items-center pl-[28px] ">
+                        <input type="text" placeholder="Find your product" class="pl-[28px] py-[11px] rounded-l-md outline-none border-0">
+                        <input list="browsers" class="pl-[28px] py-[11px] outline-none border-0" placeholder="All Categories">
+                        <datalist id="browsers" class="pl-[28px] py-[8px]">
+                          <option value="All Categories">
+                          <option value="Womens Clothings">
+                          <option value="Featured Products">
+                          <option value="Wireless ">
+                          <option value="Mens Clothings">
+                        </datalist>
+                        <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[46px] p-2 bg-white">
+                        <img src="./images/search-alt-svgrepo-com.svg" alt="" class="h-[46px] bg-primary p-3 rounded-r-md hover:bg-grassGreen hover:ease-linear transition duration-500">
+                    </div>
+                    <div class="flex items-center">
+                        <img src="./images/add-favorite-svgrepo-com.svg" alt="" class="h-[20px] md:h-[40px] mx-[20px]">
+                        <img src="./images/checkout-svgrepo-com.svg" alt="" class="h-[20px] md:h-[40px] ">
+                    </div>
+                </div> 
+            </div>
+            <div class="shadow-lg">
+                <div class="flex justify-between items-center mx-auto font-rubik py-[20px] w-[1140px] mx-auto">
+                    <div class="flex items-center">
+                        <img src="./images/menu-svgrepo-com.svg" alt="menu icon" class="h-[20px] opacity-70 ">
+                        <p class="text-secTextColor text-[16px] mx-[15px] opacity-70">All Categories</p>
+                        <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[40px] bg-white">
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Home</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Pages</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Shop</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Blog</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div>
+                        <div class="flex items-center">
+                            <p class="text-secTextColor font-semibold text-[13px] mx-[10px] opacity-70">Gallery</p>
+                            <img src="./images/dropdown-arrow-svgrepo-com.svg" alt="" class="h-[24px]">
+                        </div> 
+                    </div>
+                    <div class="px-[38px] py-[8px] rounded-md text-white bg-primary hover:bg-grassGreen hover:ease-linear transition duration-500">
+                        <p class="text-[16px] font-bold text-center">Black Friday</p>
+                        <p class="text-[12px] text-center">Get 45% off!!!</p>
+                    </div>
+        
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section>
+        <div class="flex justify-between items-center mx-auto mt-[20px] font-roboto bg-lightGrayBG py-[20px]">
+            <div class="flex w-[1140px] mx-auto">
+                <a href="#">
+                    <a href="./index.html">
+                        <p class="text-secTextColor font-semibold text-[14px] mr-[20px] opacity-70 ">Home</p>
+                    </a>
+                </a>
+                <p class="text-secTextColor font-semibold text-[14px] mr-[10px]"><span class="px-[5px]">></span> Contact Us</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="">
+            <div class="p-[10px] h-[690px] w-[800px] my-[60px] mx-auto">
+                <p class=" text-[42px] mb-[20px]">Get in touch</p>
+                <p class="w-[100%] mx-auto my-[15px]">......</p>
+                <p class="mt-[15px] text-[42px] mb-[25px]">Fundpress site thoughtfully designed for real humans which means the best user 
+                    experience for your entire community of donors, fundraisers, customers, and staff.
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63528.57695040445!2d-0.0840227!3d5.63527495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1722255521653!5m2!1sen!2sgh" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="my-[20px]"></iframe>
+        </div>
+        
+    </section>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
